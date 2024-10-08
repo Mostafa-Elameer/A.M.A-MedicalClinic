@@ -1,0 +1,8 @@
+.img-Doctor {
+    transition: all ease-in-out .3s;
+}
+
+.card-doctor:hover .img-Doctor {
+    transform: scale(1.1);
+
+}
