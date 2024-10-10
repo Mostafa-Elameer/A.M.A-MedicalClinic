@@ -17,14 +17,6 @@ import { LoginComponent } from './AllComponents/authComponents/login/login.compo
 import { RegisterComponent } from './AllComponents/authComponents/register/register.component';
 
 export const routes: Routes = [
-
-    {
-        path: '', component: AuthLayoutComponent, children: [
-            { path: '', redirectTo: "login", pathMatch: "full" },
-            { path: "login", component: LoginComponent },
-            { path: "register", component: RegisterComponent }
-        ]
-    },
     {
         path: '', component: PagesLayoutComponent, children: [
             { path: '', redirectTo: "home", pathMatch: "full" },
@@ -41,6 +33,15 @@ export const routes: Routes = [
             { path: 'quesAndAnswer', component: QuesAndAnswerComponent },
         ]
     },
+
+    {
+        path: '', component: AuthLayoutComponent, children: [
+            { path: '', redirectTo: "login", pathMatch: "full" },
+            { path: "login", component: LoginComponent },
+            { path: "register", component: RegisterComponent }
+        ]
+    },
+    
 
     { path: "**", component: NotfoundComponent }
 ];

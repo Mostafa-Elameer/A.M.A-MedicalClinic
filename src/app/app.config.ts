@@ -4,9 +4,11 @@ import { provideRouter, RouterModule, withViewTransitions } from '@angular/route
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule, provideAnimations } from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes, withViewTransitions()), provideClientHydration()
-    , importProvidersFrom(HttpClientModule, RouterModule)
+    , importProvidersFrom(HttpClientModule, RouterModule ,),
+    provideAnimations()
   ]
 };
