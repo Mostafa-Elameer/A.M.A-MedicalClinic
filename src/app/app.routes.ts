@@ -15,6 +15,7 @@ import { QuesAndAnswerComponent } from './AllComponents/pagescomponents/ques-and
 import { NotfoundComponent } from './AllComponents/additionsComponents/notfound/notfound.component';
 import { LoginComponent } from './AllComponents/authComponents/login/login.component';
 import { RegisterComponent } from './AllComponents/authComponents/register/register.component';
+import { AboutdoctorComponent } from './AllComponents/pagescomponents/aboutdoctor/aboutdoctor.component';
 
 export const routes: Routes = [
     {
@@ -27,6 +28,7 @@ export const routes: Routes = [
             { path: 'booknow', component: BooknowComponent },
             { path: 'callnow', component: CallnowComponent },
             { path: 'doctors', component: DoctorsComponent },
+            { path: 'aboutdoctor', component: AboutdoctorComponent },
             { path: 'aboutus', component: AboutusComponent },
             { path: 'feedback', component: FeedbackComponent },
             { path: 'contactus', component: ContactusComponent },
@@ -41,7 +43,7 @@ export const routes: Routes = [
             { path: "register", component: RegisterComponent }
         ]
     },
-    
+
 
     { path: "**", component: NotfoundComponent }
 ];
